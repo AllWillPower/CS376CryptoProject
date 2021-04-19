@@ -10,10 +10,10 @@ public class dbDriver {
         Connection dbConnection = null;
         //base connection to database
         try {
-            String url = "jdbc:mysql://35.202.111.69:3306/spamFilterData";
+            String url = "jdbc:mysql://ip goes here:3306/spamFilterData";
             Properties info = new Properties();
             info.put("user", "root");
-            info.put("password", "CSUWEC");
+            info.put("password", "password goes here");
             dbConnection = DriverManager.getConnection(url, info);
 
             if (dbConnection != null) {
